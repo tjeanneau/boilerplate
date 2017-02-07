@@ -1,12 +1,22 @@
 /* eslint-disable react/prop-types */
 
 import React from 'react';
+import AppBar from 'material-ui/AppBar';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import getMuiTheme from 'material-ui/styles/getMuiTheme';
+
+import '../stylesheets/app.scss';
+import lgmTheme from '../../ui/constants/lgmTheme';
 
 const App = props => (
-  <div>
-    <h1>Bienvenue sur LaGrowthMachine</h1>
-    {props.children}
-  </div>
+  <MuiThemeProvider muiTheme={getMuiTheme(lgmTheme)}>
+    <div>
+      <AppBar title={<span>Bienvenue sur LaGrowthMachine</span>} />
+      <div className="container">
+        {props.children}
+      </div>
+    </div>
+  </MuiThemeProvider>
 );
 
 App.PropTypes = {
