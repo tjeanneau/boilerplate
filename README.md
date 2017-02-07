@@ -1,6 +1,6 @@
 #LaGrowthMachine
 
-Build with Meteor, React, Redux et Material UI
+Construit avec Meteor, React, Redux et Material UI
 
 ##Installation
 
@@ -9,3 +9,8 @@ Dans un terminal:
 - cd lgm
 - meteor npm install
 - meteor
+
+##Analyse du code
+
+Dans un terminal:
+- meteor npm run lint
