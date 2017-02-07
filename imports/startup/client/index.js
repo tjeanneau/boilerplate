@@ -3,4 +3,4 @@
  */
 
 import './useraccounts-configuration';
-import './routes';
+import './routes.jsx';

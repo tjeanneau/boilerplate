@@ -9,11 +9,17 @@
   "dependencies": {
     "babel-runtime": "6.18.0",
     "lodash": "^4.17.4",
+    "material-ui": "^0.16.7",
     "meteor-node-stubs": "~0.2.0",
     "react": "^15.4.2",
+    "react-dnd": "^2.2.0",
     "react-dom": "^15.4.2",
+    "react-payment": "^0.1.6",
+    "react-redux": "^5.0.2",
     "react-router": "^3.0.2",
-    "redux": "^3.6.0"
+    "react-tap-event-plugin": "^2.0.1",
+    "redux": "^3.6.0",
+    "redux-form": "^6.5.0"
   },
   "devDependencies": {
     "babel-eslint": "^7.1.1",
@@ -23,7 +29,8 @@
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-meteor": "^4.0.1",
-    "eslint-plugin-react": "^6.9.0"
+    "eslint-plugin-react": "^6.9.0",
+    "redux-devtools": "^3.3.2"
   },
   "eslintConfig": {
     "parser": "babel-eslint",
@@ -39,6 +46,12 @@
     ],
     "settings": {
       "import/resolver": "meteor"
+    },
+    "env": {
+      "meteor": true
+    },
+    "globals": {
+      "document": false
     },
     "rules": {}
   }
