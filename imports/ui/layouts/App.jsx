@@ -11,7 +11,7 @@ import lgmTheme from '../../ui/constants/lgmTheme';
 const App = props => (
   <MuiThemeProvider muiTheme={getMuiTheme(lgmTheme)}>
     <div>
-      <AppBar title={<span>Bienvenue sur LaGrowthMachine</span>} />
+      <AppBar title={<span>Boilerplate</span>} />
       <div className="container">
         {props.children}
       </div>
